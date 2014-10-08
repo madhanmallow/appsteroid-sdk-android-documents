@@ -1,9 +1,11 @@
-# Fresvii Gaming Cloud SDK for iOS
+# AppSteroid for Android
 
-* [Fresvii Get Started](GetStarted.md)
-* [VoiceChat Get Started](VoiceChat_GetStarted.md)
-* [Android SDK Manual](Android_SDK.md)
-* [Error Code Specs](ErrorCode.md)
+* [AppSteroid Get Started](GetStarted/AppSteroidGetStarted.md)
+* [AppSteroid Activities](GetStarted/AppSteroidActivities.md)
+* [Receiving GCM Notifications](GetStarted/GcmNotifications.md)
+* [Manifest](GetStarted/Manifest.md)
+* [VoiceChat Get Started](GetStarted/VoiceChatGetStarted.md)
+* [Android SDK Reference Manual](ReferenceManual/AndroidSDK.md)
+* [Error Codes](ErrorCodes.md)
 * [FAQ](FAQ.md)
-* [Release Notes](Release_Note.md)
-* [Sample Project](https://github.com/fresvii/gaming-cloud-sdk-android-documents/raw/master/sample-project/fresvii-sdk-android-0.1.1-SampleProject.zip)
+* [Release Notes](ReleaseNotes.md)
