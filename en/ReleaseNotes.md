@@ -2,6 +2,10 @@
 
 ---
 
+### 0.2.3
+- Performance inprovements
+	- Prevent the app to close when tapping on the app icon button after launching the app from GCM notification.
+
 ### 0.2.2
 - Performance improvements
     - Show pair group on the screen, when creating a group with only two players.
