@@ -63,6 +63,7 @@ In order to receive GCM Notifications, you will have to define the following per
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
         <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.WAKE_LOCK" />   
         <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
         <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />

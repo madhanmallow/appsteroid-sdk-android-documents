@@ -33,11 +33,17 @@ The AppSteroid comes with a set of default UIs for features such as Forum, Chat,
 
 If you wish to use those default UIs (and normally you do), you will have to define the AppSteroid Activity in your application's Manifest like this:
 
+        <!-- AppSteroid Activity -->
         <activity
-                android:name="com.fresvii.gui.AppSteroidActivity" 
-                android:theme="@style/AppSteroidTheme" />
+			android:name="com.fresvii.gui.AppSteroidActivity" 
+            android:theme="@style/AppSteroidTheme"
+			android:parentActivityName="*************">
+            <meta-data
+        		android:name="android.support.PARENT_ACTIVITY"
+        		android:value="************"/>
+		</activity>
 
-If you use the Manifest Merger, the above activities will be automatically defined and you can skip this step.
+* You have to add your application main activity in `android:parentActivityName` and `android:value`. (e.g.`com.fresvii.sdk.sample.MainActivity`)
 
 
 #### 2.2. Define AppSteroid Receivers and Services in the Manifest
@@ -101,6 +107,7 @@ To make full use of all the features of the AppSteroid, you will have to define 
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
         <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.WAKE_LOCK" />   
         <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
         <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
@@ -146,6 +153,7 @@ If you wish to use the Android backup Service, you will have to edit your Manife
 |android.permission.RECORD_AUDIO|VoiceChat|VoiceChat requires this permission to access the device's microphone. If you do not wish to use the VoiceChat feature, this permission may be removed.|
 |android.permission.MODIFY_AUDIO_SETTINGS|VoiceChat|VoiceChat requires this permission to switch the device's speaker to inner or outer speaker, respectively. If you do not wish to use the VoiceChat feature, this permission may be removed.|
 |android.permission.GET_ACCOUNTS|GCM Notifications (Used by Forum, Chat, Matchmaking, VoiceChat...)|GCM Notifications require this permission to work. If you do not wish to use GCM Notifications, this permission may be removed. Be advised that removing GCM Notifications may severely diminish the user experience.|
+|android.permission.GET_TASKS| GCM Notifications(Used by Forum, Chat, Matchmaking, VoiceChat...)|This permission is used to set parrent activity when launching an application from GCM Notification. |
 |com.google.android.c2dm.permission.RECEIVE|GCM Notifications (Used by Forum, Chat, Matchmaking, VoiceChat...)|GCM Notifications require this permission to work. If you do not wish to use GCM Notifications, this permission may be removed. Be advised that removing GCM Notifications may severely diminish the user experience.|
 |com.example.gcm.permission.C2D_MESSAGE|GCM Notifications (Used by Forum, Chat, Matchmaking, VoiceChat...)|GCM Notifications require this permission to work. If you do not wish to use GCM Notifications, this permission may be removed. Be advised that removing GCM Notifications may severely diminish the user experience.|
 |com.example.gcm.c2dm.permission.RECEIVE|GCM Notifications (Used by Forum, Chat, Matchmaking, VoiceChat...)|GCM Notifications require this permission to work. If you do not wish to use GCM Notifications, this permission may be removed. Be advised that removing GCM Notifications may severely diminish the user experience.|
@@ -178,6 +186,7 @@ If you wish to use the Android backup Service, you will have to edit your Manife
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
         <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.WAKE_LOCK" />   
         <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
         <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
@@ -215,9 +224,15 @@ If you wish to use the Android backup Service, you will have to edit your Manife
             <service android:name="com.fresvii.gcm.GcmIntentService" />
             
             <!-- AppSteroid Activity -->
-            <activity
-                    android:name="com.fresvii.gui.AppSteroidActivity" 
-                    android:theme="@style/AppSteroidTheme" />
+            <!-- AppSteroid Activity -->
+        <activity
+			android:name="com.fresvii.gui.AppSteroidActivity" 
+            android:theme="@style/AppSteroidTheme"
+			android:parentActivityName="com.fresvii.sdk.sample.MainActivity">
+            <meta-data
+        		android:name="android.support.PARENT_ACTIVITY"
+        		android:value="com.fresvii.sdk.sample.MainActivity"/>
+		</activity>
         </application>
         
     </manifest>
