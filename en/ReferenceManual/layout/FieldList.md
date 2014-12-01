@@ -1,4 +1,0 @@
-
-### Field Summary
-
-%FIELD_LIST_ITEMS_HEADER%%FIELD_LIST_ITEMS%

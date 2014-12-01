@@ -2,8 +2,12 @@
 
 ---
 
+### 0.2.4
+- Performance improvements
+	- Allows to set default GCM notification icons. Please refer to `setDefaultNotificationIcons` section of `AndroidSDK.md` document.
+
 ### 0.2.3
-- Performance inprovements
+- Performance improvements
 	- Prevent the app to close when tapping on the app icon button after launching the app from GCM notification.
 
 ### 0.2.2

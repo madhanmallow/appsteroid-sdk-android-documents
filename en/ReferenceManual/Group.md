@@ -1,7 +1,7 @@
 
 # AppSteroid Group API
 
-Last updated 2014-10-08
+Last updated 2014-12-01
 
 -------------------------
 

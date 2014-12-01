@@ -1,7 +1,7 @@
 
 # AppSteroid User API
 
-Last updated 2014-10-08
+Last updated 2014-12-01
 
 -------------------------
 
@@ -737,6 +737,7 @@ Matthias Kollmer
 |Method|Description|
 |---|---|
 |[public void onSuccess(List users)](#com_fresvii_server_access_callbacks_user_GetUsersCallback_void_onSuccess_List)|Callback invoked when operation succeeds.|
+|[public void onSuccess(AppSteroidListMetaInfo metaInfo, List users)](#com_fresvii_server_access_callbacks_user_GetUsersCallback_void_onSuccess_AppSteroidListMetaInfo_List)|Callback invoked when operation succeeds.|
 
 
 
@@ -756,6 +757,24 @@ Callback invoked when operation succeeds.
 
 |Parameter|Description|
 |---|---|
+|List users|The users retrieved.|
+
+
+
+## <a name="com_fresvii_server_access_callbacks_user_GetUsersCallback_void_onSuccess_AppSteroidListMetaInfo_List"> onSuccess </a>
+
+```
+public void onSuccess(AppSteroidListMetaInfo metaInfo,  
+                      List users)
+```
+
+Callback invoked when operation succeeds.
+
+#### Parameters
+
+|Parameter|Description|
+|---|---|
+|[AppSteroidListMetaInfo](AndroidSDK.md#com.fresvii.components.AppSteroidListMetaInfo) metaInfo|List meta info.|
 |List users|The users retrieved.|
 
 

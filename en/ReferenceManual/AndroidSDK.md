@@ -1,7 +1,7 @@
 
 # AppSteroid for Android
 
-Last updated 2014-10-08
+Last updated 2014-12-01
 
 ---
 
@@ -85,6 +85,7 @@ matsushimakatsuhito
 |Method|Description|
 |---|---|
 |[public static boolean isStarted()](#com_fresvii_AppSteroid_boolean_isStarted_)|Checks if the AppSteroid has been started.|
+|[public static void setDefaultNotificationIcons(int smallIcon, Bitmap largeIcon)](#com_fresvii_AppSteroid_void_setDefaultNotificationIcons_int_Bitmap)|Default GCM notification icon settings.|
 |[public static void setLeaderboardReferenceTimeForToday(LeaderboardReferenceTime leaderboardReferenceTimeForToday)](#com_fresvii_AppSteroid_void_setLeaderboardReferenceTimeForToday_LeaderboardReferenceTime)|Sets the LeaderboardReferenceTime for today's highscores.|
 |[public static void setLeaderboardReferenceTimeForWeekly(LeaderboardReferenceTime leaderboardReferenceTimeForWeekly)](#com_fresvii_AppSteroid_void_setLeaderboardReferenceTimeForWeekly_LeaderboardReferenceTime)|Sets the LeaderboardReferenceTime for weekly highscores.|
 |[public static void setMatchmakingPlayerCount(int playerCount)](#com_fresvii_AppSteroid_void_setMatchmakingPlayerCount_int)|Sets the number of players used for outgoing matchmaking requests.|
@@ -112,6 +113,24 @@ Checks if the AppSteroid has been started.
 |Return Type|Description|
 |---|---|
 |boolean|true if the AppSteroid has been started, false otherwise.|
+
+
+## <a name="com_fresvii_AppSteroid_void_setDefaultNotificationIcons_int_Bitmap"> setDefaultNotificationIcons </a>
+
+```
+public static void setDefaultNotificationIcons(int smallIcon,  
+                                               Bitmap largeIcon)
+```
+
+Default GCM notification icon settings.  Please refer to <a href="http://developer.android.com/reference/android/app/Notification.Builder.html">Android official document</a> about small icon and large icon.
+
+#### Parameters
+
+|Parameter|Description|
+|---|---|
+|int smallIcon|Notification small icon.|
+|Bitmap largeIcon|Notification large icon.|
+
 
 
 ## <a name="com_fresvii_AppSteroid_void_setLeaderboardReferenceTimeForToday_LeaderboardReferenceTime"> setLeaderboardReferenceTimeForToday </a>
