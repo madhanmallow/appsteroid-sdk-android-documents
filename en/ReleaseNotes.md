@@ -2,6 +2,10 @@
 
 ---
 
+### 0.2.5
+- Fixed Issue
+	- Ability to post scores on a specific date using Leaderboard API.
+
 ### 0.2.4
 - Performance improvements
 	- Allows to set default GCM notification icons. Please refer to `setDefaultNotificationIcons` section of `AndroidSDK.md` document.

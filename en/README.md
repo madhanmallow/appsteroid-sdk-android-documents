@@ -6,6 +6,4 @@
 * [Manifest](GetStarted/Manifest.md)
 * [VoiceChat Get Started](GetStarted/VoiceChatGetStarted.md)
 * [Android SDK Reference Manual](ReferenceManual/AndroidSDK.md)
-* [Error Codes](ErrorCodes.md)
-* [FAQ](FAQ.md)
 * [Release Notes](ReleaseNotes.md)

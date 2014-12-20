@@ -1,7 +1,7 @@
 
 # AppSteroid SNS Account API
 
-Last updated 2014-12-01
+Last updated 2014-12-10
 
 -------------------------
 
